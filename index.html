@@ -105,6 +105,27 @@
             font-style: italic;
         }
 
+        footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: auto;
+            font-size: 0.95rem;
+            max-width: 600px;
+        }
+
+        footer a {
+            color: #7a8a9a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #2c3e50;
+            text-decoration: underline;
+        }
+
         /* Hide ElevenLabs branding - multiple selectors for coverage */
         elevenlabs-convai::part(powered-by),
         elevenlabs-convai [class*="powered"],
@@ -148,6 +169,10 @@
             We believe every woman deserves to be heard, supported, and empowered to thrive - designed by Vivian Fu
         </p>
     </div>
+
+    <footer>
+        <a href="https://tally.so/r/3y5yNp" target="_blank">Feedback & Waitlist</a>
+    </footer>
 
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
